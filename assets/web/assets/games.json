@@ -1,0 +1,44 @@
+[
+  {
+    "id": "harry_potter_and_the_sorcerers_stone.bin",
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "system": "psx",
+    "cover": "https://cors-anywhere.herokuapp.com/https://wowroms-photos.com/emulators-roms-logo/40/31783/420-420/Harry+Potter+and+the+Sorcerer's+Stone+(USA)+(En,Fr,Es)-image.jpg"
+  },
+  {
+    "id": "ctr_-_crash_team_racing.bin",
+    "title": "Crash Team Racing",
+    "system": "psx",
+    "cover": "https://cors-anywhere.herokuapp.com/https://upload.wikimedia.org/wikipedia/en/4/4f/CrashTeamRacingNACover.png"
+  },
+  {
+    "id": "South Park.v64",
+    "title": "South Park",
+    "system": "n64",
+    "cover": "https://cors-anywhere.herokuapp.com/https://m.media-amazon.com/images/I/61Dkkhz8hOL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": "Super Mario 64 (USA).z64",
+    "title": "Super Mario 64",
+    "system": "n64",
+    "cover": "https://cors-anywhere.herokuapp.com/https://m.media-amazon.com/images/I/61WDvKg7g9L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": "Grand Theft Auto - Liberty City Stories.iso",
+    "title": "Grand Theft Auto: Liberty City Stories",
+    "system": "psp",
+    "cover": "https://cors-anywhere.herokuapp.com/https://static.wikia.nocookie.net/psp/images/8/87/Car%C3%A1tula_Grand_Theft_Auto_Liberty_City_Stories.jpg/revision/latest?cb=20201003063839&path-prefix=es"
+  },
+  {
+    "id": "B-Movie (Europe) (En,Es,It) (Track 01).bin",
+    "title": "B-Movie",
+    "system": "psx",
+    "cover": "https://cors-anywhere.herokuapp.com/https://static.wikia.nocookie.net/psp/images/8/87/Car%C3%A1tula_Grand_Theft_Auto_Liberty_City_Stories.jpg/revision/latest?cb=20201003063839&path-prefix=es"
+  },
+  {
+    "id": "Grinch.bin",
+    "title": "The Grinch",
+    "system": "psx",
+    "cover": "https://cors-anywhere.herokuapp.com/https://static.wikia.nocookie.net/psp/images/8/87/Car%C3%A1tula_Grand_Theft_Auto_Liberty_City_Stories.jpg/revision/latest?cb=20201003063839&path-prefix=es"
+  }
+]
