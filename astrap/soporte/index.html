@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soporte — Astrap</title>
+<meta name="description" content="Centro de soporte de Astrap: ayuda con tu cuenta, tu suscripción y la app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+<style>
+:root{--bg:#06060F;--gold:#E8C98A;--gold2:#F0D49A;--gold-dark:#C99B4E;--on-gold:#1A1430;--text:#F4F1FF;--text2:#CFCCE6;--muted:#8E8AA8;--faint:#5E5A78;--hair:rgba(232,201,138,.14);--hair2:rgba(255,255,255,.08);--serif:"Fraunces",Georgia,serif;--sans:"Inter",-apple-system,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.75;font-size:15.5px}
+::selection{background:var(--gold);color:var(--on-gold)}
+a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}
+nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(18px);background:rgba(6,6,15,.6);border-bottom:1px solid var(--hair2)}
+.nav-in{max-width:860px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--serif);font-size:20px;display:flex;align-items:center;gap:9px;color:var(--text)}
+.logo .mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--gold2),var(--gold-dark));display:grid;place-items:center;color:var(--on-gold);font-size:14px}
+.tabs{display:flex;gap:18px;font-size:13.5px}.tabs a{color:var(--muted)}.tabs a.on{color:var(--gold)}
+main{max-width:860px;margin:0 auto;padding:64px 24px 90px}
+h1{font-family:var(--serif);font-weight:420;font-size:clamp(30px,4.5vw,42px);line-height:1.15;margin-bottom:10px}
+.updated{color:var(--faint);font-size:14px;margin-bottom:34px}
+p,li{color:var(--text2)}
+.help{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:26px 0}
+.card{background:rgba(255,255,255,.04);border:1px solid var(--hair);border-radius:16px;padding:20px 22px}
+.card b{display:block;margin-bottom:6px;color:var(--text)}
+.card p{font-size:14px}
+.mailbox{text-align:center;background:linear-gradient(160deg,rgba(232,201,138,.12),rgba(167,139,250,.07));border:1px solid var(--hair);border-radius:20px;padding:38px 26px;margin-top:36px}
+.mailbox h2{font-family:var(--serif);font-weight:480;margin:0 0 8px;color:var(--text)}
+.mailbox a.btn{display:inline-block;margin-top:16px;background:linear-gradient(135deg,var(--gold2),var(--gold-dark));color:var(--on-gold);font-weight:700;padding:13px 26px;border-radius:14px;text-decoration:none}
+footer{border-top:1px solid var(--hair2);padding:34px 24px;font-size:13px;color:var(--muted);text-align:center}
+footer a{margin:0 10px}
+@media(max-width:680px){.help{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><div class="nav-in">
+  <span class="logo"><span class="mark">✦</span>Astrap</span>
+  <span class="tabs"><a href="../privacidad/">Privacidad</a><a href="../terminos/">Términos</a><a class="on" href="../soporte/">Soporte</a></span>
+</div></nav>
+<main>
+  <h1>Soporte</h1>
+  <p class="updated">¿Necesitas ayuda con Astrap? Aquí resolvemos lo más común.</p>
+
+  <div class="help">
+    <div class="card"><b>Mi carta no coincide / creo que hay un error</b><p>Revisa tu fecha, hora y lugar de nacimiento en Perfil. 4 minutos de diferencia en la hora mueven 1° tu Ascendente. Si todo está bien y algo sigue raro, escríbenos con tus datos y lo revisamos.</p></div>
+    <div class="card"><b>Compré Astrap+ y no se desbloqueó</b><p>Abre el paywall y toca <b>Restaurar compras</b> con la misma cuenta de App Store / Google Play con la que compraste. Si no se activa en unos minutos, contáctanos con tu correo de cuenta.</p></div>
+    <div class="card"><b>Cancelar o cambiar mi suscripción</b><p>La suscripción se gestiona en tu tienda: en iPhone ve a Ajustes → tu nombre → Suscripciones; en Android, Play Store → Perfil → Pagos y suscripciones. Al cancelar conservas Astrap+ hasta el fin del periodo.</p></div>
+    <div class="card"><b>No me llegan las notificaciones</b><p>Ve a Perfil → Notificaciones diarias y verifica que estén permitidas en los ajustes del sistema. En Android revisa también que la app no tenga la batería restringida.</p></div>
+    <div class="card"><b>Quiero corregir mis datos de nacimiento</b><p>En Perfil → Editar mis datos. Ten en cuenta que la edición está limitada a una vez, así que revisa bien antes de guardar. Si ya la usaste y hubo un error real, escríbenos.</p></div>
+    <div class="card"><b>Eliminar mi cuenta</b><p>Perfil → Eliminar cuenta. Borra permanentemente todos tus datos. Recuerda cancelar tu suscripción en la tienda por separado, si tienes una activa.</p></div>
+  </div>
+
+  <div class="mailbox">
+    <h2>¿No encontraste tu respuesta?</h2>
+    <p>Escríbenos y te contestamos lo antes posible. Cuéntanos qué pasó y, si puedes, desde qué correo entras a la app.</p>
+    <a class="btn" href="mailto:edgarsaenz243@gmail.com?subject=Soporte%20Astrap">Escribir a soporte</a>
+  </div>
+</main>
+<footer>© 2026 Astrap · <a href="../privacidad/">Privacidad</a>·<a href="../terminos/">Términos</a>·<a href="../soporte/">Soporte</a></footer>
+</body>
+</html>
