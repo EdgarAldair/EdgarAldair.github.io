@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flufy | Edgar Sáenz</title>
+<meta name="description" content="Flufy: a nonprofit app for pet adoption and lost-pet alerts, founded and built by Edgar Sáenz.">
+<meta property="og:title" content="Flufy | Edgar Sáenz">
+<meta property="og:description" content="A community app for pet adoption and lost pets.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://edgaraldair.me/projects/flufy/">
+<meta property="og:image" content="https://edgaraldair.me/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://edgaraldair.me/projects/flufy/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>html{background:#000}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<header class="p-top wrap">
+  <a class="p-back" href="/" data-go="light"><svg viewBox="0 0 14 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M13 6H1.5M6 1.2L1.2 6 6 10.8"/></svg>Back</a>
+  <div class="p-actions">
+    <a class="pill pill-ghost" href="https://apps.apple.com/mx/app/flufy-mascotas-y-adopci%C3%B3n/id6761751488" target="_blank" rel="noopener">App Store</a>
+    <a class="pill pill-solid" href="https://flufy.org" target="_blank" rel="noopener">Visit site<svg class="arrow" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M1.5 11.5l10-10M3.5 1.5h8v8"/></svg></a>
+  </div>
+</header>
+
+<div class="p-shell wrap">
+  <nav class="p-side" aria-label="Sections">
+    <a href="#overview" class="on">Overview</a>
+    <a href="#product">Product</a>
+    <a href="#stack">Stack</a>
+    <a href="#links">Links</a>
+  </nav>
+
+  <main class="p-main">
+    <header class="p-hero">
+      <h1>Flufy</h1>
+      <p>A community app for pet adoption and lost pets.</p>
+    </header>
+
+    <figure class="p-cover">
+      <img src="/img/flufy.webp" alt="Flufy app screens: adoption feed, lost-pet map and alerts" width="1600" height="1000">
+    </figure>
+
+    <section id="overview" class="p-block" data-spy>
+      <div class="p-sec" data-reveal>
+        <p class="p-label">Context</p>
+        <div class="p-body">
+          <p class="p-lead">Finding a home for a pet, or finding one that got lost, usually happens in scattered posts that disappear in a day.</p>
+          <p>Flufy puts it in one place: adoption profiles, a live map of lost pets nearby and direct chat between the people involved. It is free and run as a nonprofit.</p>
+        </div>
+      </div>
+      <div class="p-sec" data-reveal>
+        <p class="p-label">Role</p>
+        <div class="p-body">
+          <p class="p-lead">I founded Flufy and I build it.</p>
+          <p>It started in 2019 under the name Petly and went through several rewrites before it shipped. I built the Flutter app, the API behind it, the admin panel and the website.</p>
+          <p>It has been live on the App Store since April 2026 and is also on Google Play.</p>
+        </div>
+      </div>
+    </section>
+    <section id="product" class="p-block" data-spy>
+      <div class="p-sec" data-reveal>
+        <p class="p-label">Product</p>
+        <div class="p-body">
+          <p class="p-lead">Adopt a pet, report a lost one or publish yours for adoption, all from the same app.</p>
+          <p>Adopters send a request and talk to the current owner through in-app chat. Anyone who publishes a pet for adoption verifies their identity first.</p>
+        </div>
+      </div>
+      <div class="p-phones" data-reveal>
+        <figure>
+          <img src="/img/flufy-home.webp" alt="Flufy home screen" width="390" height="844" loading="lazy">
+          <figcaption><strong>Home</strong>Vets nearby, recommended pets and donations for strays.</figcaption>
+        </figure>
+        <figure>
+          <img src="/img/flufy-map.webp" alt="Flufy lost-pet map" width="560" height="1212" loading="lazy">
+          <figcaption><strong>Lost-pet map</strong>Reports around you, filtered by species.</figcaption>
+        </figure>
+        <figure>
+          <img src="/img/flufy-publish.webp" alt="Flufy publish menu" width="560" height="1212" loading="lazy">
+          <figcaption><strong>Publish</strong>Post a pet for adoption or report one as lost.</figcaption>
+        </figure>
+        <figure>
+          <img src="/img/flufy-signin.webp" alt="Flufy sign-in screen" width="560" height="1212" loading="lazy">
+          <figcaption><strong>Sign in</strong>One tap with Apple or Google.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id="stack" class="p-block" data-spy>
+      <div class="p-sec" data-reveal>
+        <p class="p-label">Stack</p>
+        <div class="p-body">
+          <p class="p-lead">One Flutter codebase for iOS and Android, a Node API and Firebase around it.</p>
+        </div>
+      </div>
+      <dl class="p-rows" data-reveal>
+          <div><dt>App</dt><dd>Flutter · BLoC · auto_route · get_it</dd></div>
+          <div><dt>Maps</dt><dd>Google Maps · Apple Maps · geolocation</dd></div>
+          <div><dt>API</dt><dd>Node.js · Express · MongoDB</dd></div>
+          <div><dt>Services</dt><dd>Firebase Auth · Cloud Messaging · Crashlytics · Storage</dd></div>
+          <div><dt>Web</dt><dd>React admin panel · React landing</dd></div>
+      </dl>
+    </section>
+    <section id="links" class="p-block" data-spy>
+      <div class="p-links" data-reveal>
+        <a href="https://apps.apple.com/mx/app/flufy-mascotas-y-adopci%C3%B3n/id6761751488" target="_blank" rel="noopener"><span>App Store</span><svg class="arrow" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M1.5 11.5l10-10M3.5 1.5h8v8"/></svg></a>
+        <a href="https://play.google.com/store/apps/details?id=com.petly.org" target="_blank" rel="noopener"><span>Google Play</span><svg class="arrow" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M1.5 11.5l10-10M3.5 1.5h8v8"/></svg></a>
+        <a href="https://flufy.org" target="_blank" rel="noopener"><span>flufy.org</span><svg class="arrow" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M1.5 11.5l10-10M3.5 1.5h8v8"/></svg></a>
+      </div>
+    </section>
+
+    <a class="p-next" href="/projects/sonora/" data-go="dark" data-reveal>
+      <span>Next project</span>
+      <strong>Sonora</strong>
+    </a>
+  </main>
+</div>
+
+<footer class="foot wrap">
+  <div class="foot-left">
+    <p class="foot-name">Edgar Sáenz</p>
+    <p class="foot-line">Mobile engineer. Flutter apps and the servers behind them.</p>
+  </div>
+  <div class="foot-right">
+    <a href="https://www.linkedin.com/in/edgar-saenz/" target="_blank" rel="noopener">LinkedIn <svg class="arrow" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M1.5 11.5l10-10M3.5 1.5h8v8"/></svg></a>
+    <a href="https://github.com/EdgarAldair" target="_blank" rel="noopener">GitHub <svg class="arrow" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M1.5 11.5l10-10M3.5 1.5h8v8"/></svg></a>
+    <span class="foot-place">Mexico</span>
+  </div>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>

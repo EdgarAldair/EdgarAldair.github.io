@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sonora | Edgar Sáenz</title>
+<meta name="description" content="Sonora: a self-hosted music streaming server and iPhone app by Edgar Sáenz. FastAPI, ffmpeg, Docker and Flutter.">
+<meta property="og:title" content="Sonora | Edgar Sáenz">
+<meta property="og:description" content="Self-hosted music streaming. Your machine is the server.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://edgaraldair.me/projects/sonora/">
+<meta property="og:image" content="https://edgaraldair.me/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://edgaraldair.me/projects/sonora/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>html{background:#000}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<header class="p-top wrap">
+  <a class="p-back" href="/" data-go="light"><svg viewBox="0 0 14 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M13 6H1.5M6 1.2L1.2 6 6 10.8"/></svg>Back</a>
+  <div class="p-actions">
+    <a class="pill pill-ghost" href="https://github.com/EdgarAldair/Sonora" target="_blank" rel="noopener">GitHub</a>
+    <a class="pill pill-solid" href="https://apps.apple.com/us/app/sonora-media-player/id6792233706" target="_blank" rel="noopener">App Store<svg class="arrow" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M1.5 11.5l10-10M3.5 1.5h8v8"/></svg></a>
+  </div>
+</header>
+
+<div class="p-shell wrap">
+  <nav class="p-side" aria-label="Sections">
+    <a href="#overview" class="on">Overview</a>
+    <a href="#product">Product</a>
+    <a href="#how">How it works</a>
+    <a href="#stack">Stack</a>
+  </nav>
+
+  <main class="p-main">
+    <header class="p-hero">
+      <h1>Sonora</h1>
+      <p>Self-hosted music streaming. Your machine is the server.</p>
+    </header>
+
+    <figure class="p-cover">
+      <img src="/img/sonora.webp" alt="Sonora app screens: now playing, library and home" width="1600" height="1000">
+    </figure>
+
+    <section id="overview" class="p-block" data-spy>
+      <div class="p-sec" data-reveal>
+        <p class="p-label">Context</p>
+        <div class="p-body">
+          <p class="p-lead">I wanted my music on my own terms: my library, my server, no ads.</p>
+          <p>Sonora is two pieces. A server you run on your own machine with Docker, and an iPhone app that connects to it and plays your library from anywhere.</p>
+        </div>
+      </div>
+      <div class="p-sec" data-reveal>
+        <p class="p-label">Role</p>
+        <div class="p-body">
+          <p class="p-lead">I built both sides and released the server as open source.</p>
+          <p>The server is on GitHub under the MIT license. The app is on the App Store as Sonora Media Player, free.</p>
+        </div>
+      </div>
+    </section>
+    <section id="product" class="p-block" data-spy>
+      <div class="p-sec" data-reveal>
+        <p class="p-label">Product</p>
+        <div class="p-body">
+          <p class="p-lead">A music player that feels like a streaming service, pointed at a server you own.</p>
+        </div>
+      </div>
+      <dl class="p-rows" data-reveal>
+          <div><dt>Library</dt><dd>Albums, artists, songs and playlists, separate for each user</dd></div>
+          <div><dt>Search</dt><dd>Search and stream, with artist and album pages</dd></div>
+          <div><dt>Lyrics</dt><dd>Synced lyrics while a song plays</dd></div>
+          <div><dt>Offline</dt><dd>Download music to listen without a connection</dd></div>
+          <div><dt>Playback</dt><dd>Background audio and crossfade between songs</dd></div>
+          <div><dt>Alexa</dt><dd>Optional skill: “ask Sonora to play the playlist road trip”</dd></div>
+      </dl>
+    </section>
+    <section id="how" class="p-block" data-spy>
+      <div class="p-sec" data-reveal>
+        <p class="p-label">How it works</p>
+        <div class="p-body">
+          <p class="p-lead">The app never talks to a company. It talks to your own box.</p>
+        </div>
+      </div>
+      <div class="p-flow" data-reveal>
+        <div class="p-node"><strong>Sonora app</strong><span>Flutter on iPhone</span></div>
+        <div class="p-node"><strong>Your server</strong><span>FastAPI in Docker</span></div>
+        <div class="p-node"><strong>Your library</strong><span>Files streamed through ffmpeg</span></div>
+      </div>
+    </section>
+    <section id="stack" class="p-block" data-spy>
+      <dl class="p-rows" data-reveal>
+          <div><dt>Server</dt><dd>Python 3.12 · FastAPI · ffmpeg · yt-dlp</dd></div>
+          <div><dt>Packaging</dt><dd>Docker Compose · update script that keeps a rollback image</dd></div>
+          <div><dt>App</dt><dd>Flutter · just_audio · background playback</dd></div>
+          <div><dt>Extras</dt><dd>Alexa skill with OAuth account linking · Lidarr integration</dd></div>
+      </dl>
+      <div class="p-links" data-reveal>
+        <a href="https://github.com/EdgarAldair/Sonora" target="_blank" rel="noopener"><span>GitHub</span><svg class="arrow" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M1.5 11.5l10-10M3.5 1.5h8v8"/></svg></a>
+        <a href="https://apps.apple.com/us/app/sonora-media-player/id6792233706" target="_blank" rel="noopener"><span>App Store</span><svg class="arrow" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M1.5 11.5l10-10M3.5 1.5h8v8"/></svg></a>
+      </div>
+    </section>
+
+    <a class="p-next" href="/projects/tablely/" data-go="dark" data-reveal>
+      <span>Next project</span>
+      <strong>Tablely</strong>
+    </a>
+  </main>
+</div>
+
+<footer class="foot wrap">
+  <div class="foot-left">
+    <p class="foot-name">Edgar Sáenz</p>
+    <p class="foot-line">Mobile engineer. Flutter apps and the servers behind them.</p>
+  </div>
+  <div class="foot-right">
+    <a href="https://www.linkedin.com/in/edgar-saenz/" target="_blank" rel="noopener">LinkedIn <svg class="arrow" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M1.5 11.5l10-10M3.5 1.5h8v8"/></svg></a>
+    <a href="https://github.com/EdgarAldair" target="_blank" rel="noopener">GitHub <svg class="arrow" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M1.5 11.5l10-10M3.5 1.5h8v8"/></svg></a>
+    <span class="foot-place">Mexico</span>
+  </div>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>
